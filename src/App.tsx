@@ -24,16 +24,16 @@ const App = () => {
 
   const defFields: IFormField[] = [ // support form fields by default
     {
-      name: 'fname', label: 'First Name', md: 6, classes: 'mb-2',
+      name: 'fname', label: 'First Name', classes: 'mb-2',
     },
     {
-      name: 'lname', label: 'Last Name', md: 6, classes: 'mb-2'
+      name: 'lname', label: 'Last Name', classes: 'mb-2'
     },
     {
-      name: 'email', label: 'Email', md: 6, classes: 'mb-2', ftype: 'email'
+      name: 'email', label: 'Email', classes: 'mb-2', ftype: 'email'
     },
     {
-      name: 'pass', label: 'Password', md: 6, classes: 'mb-2', ftype: 'password'
+      name: 'pass', label: 'Password', classes: 'mb-2', ftype: 'password'
     }
   ];
 
@@ -54,7 +54,7 @@ const App = () => {
   return (
     <Container className='main'>
       <Row>
-        <Col lg={{ span: 8, offset: 2 }}>
+        <Col md={{ span: 8, offset: 2 }} lg={{ span: 6, offset: 3 }}>
           <Card body>
             <h3 className='text-center'>User Signup</h3>
             <GForm formClass='signup-form' btnLabel='Register' onFSubmit={signUp} fields={defFields} validations={defValids} />
