@@ -1,0 +1,14 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  height: calc(100% - 50px);
+  background-image: url('/trees.png');
+}
+.main {
+  margin-top: 50px;
+}
